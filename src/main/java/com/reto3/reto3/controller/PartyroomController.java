@@ -33,7 +33,7 @@ public class PartyroomController {
         return partyroomService.save(p);
     }
 
-    @PostMapping("/update")
+    @PutMapping("/update")
     @ResponseStatus(HttpStatus.CREATED)
     public Partyroom update(@RequestBody Partyroom p){
         return partyroomService.update(p);
